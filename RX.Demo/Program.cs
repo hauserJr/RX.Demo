@@ -29,7 +29,7 @@ namespace RX.Demo
              */
 
             // 將資料源宣告為資料提供者
-            IObservable<BossAlert> observableOfInts = data.ToObservable();
+            IObservable<BossAlert> observableData = data.ToObservable();
             
             // 宣告觀察者
             IObserver<BossAlert> workMate_1 = new Workmate_WatchStock<BossAlert>();
@@ -40,17 +40,17 @@ namespace RX.Demo
              * 一個提供者可以有多個訂閱
              * 但一個執行緒只能有一個訂閱
              */
-            IDisposable subScription_1 = observableOfInts
+            IDisposable subScription_1 = observableData
                 // SubscribeOn 多執行緒
                 .SubscribeOn(NewThreadScheduler.Default)
                 .Subscribe(workMate_1);
 
-            IDisposable subScription_2 = observableOfInts
+            IDisposable subScription_2 = observableData
                 // SubscribeOn 多執行緒
                 .SubscribeOn(NewThreadScheduler.Default)
                 .Subscribe(workMate_2);
 
-            IDisposable subScription_3 = observableOfInts
+            IDisposable subScription_3 = observableData
                 // SubscribeOn 多執行緒
                 .SubscribeOn(NewThreadScheduler.Default)
                 .Subscribe(workMate_3);
