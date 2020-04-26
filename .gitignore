@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/RX.Demo/bin/Debug/netcoreapp3.1
+/RX.Demo/obj/Debug/netcoreapp3.1
+/RX.Demo/obj/Release/netcoreapp3.1
