@@ -8,6 +8,7 @@ namespace RX.Demo
     public class CustomObserver
     {
         private static object _objectLock = new object();
+
         /// <summary>
         /// 上班看股票的同事
         /// </summary>
