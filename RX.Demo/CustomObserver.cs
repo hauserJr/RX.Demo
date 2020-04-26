@@ -27,8 +27,8 @@ namespace RX.Demo
             public void OnNext(T value)
             {
                 var bossAlert = (BossAlert)value;
-                var result = !bossAlert.isComing ? "老闆還沒來繼續看Stock" : "老闆來了快關掉Stock,假裝工作中 ...";
-                Word.Display(Thread.CurrentThread.ManagedThreadId, result, bossAlert.isLock);
+                var result = !bossAlert.IsComing ? "老闆還沒來繼續看Stock" : "老闆來了快關掉Stock,假裝工作中 ...";
+                Word.Display(Thread.CurrentThread.ManagedThreadId, result, bossAlert.IsLock);
             }
         }
 
@@ -51,8 +51,8 @@ namespace RX.Demo
             public void OnNext(T value)
             {
                 var bossAlert = (BossAlert)value;
-                var result = !bossAlert.isComing ? "老闆還沒來繼續看NBA" : "老闆來了快關掉NBA,假裝工作中 ...";
-                Word.Display(Thread.CurrentThread.ManagedThreadId, result, bossAlert.isLock);
+                var result = !bossAlert.IsComing ? "老闆還沒來繼續看NBA" : "老闆來了快關掉NBA,假裝工作中 ...";
+                Word.Display(Thread.CurrentThread.ManagedThreadId, result, bossAlert.IsLock);
             }
         }
 
@@ -75,8 +75,8 @@ namespace RX.Demo
             public void OnNext(T value)
             {
                 var bossAlert = (BossAlert)value;
-                var result = !bossAlert.isComing ? "老闆還沒來繼續看MLB" : "老闆來了快關掉MLB,假裝工作中 ...";
-                Word.Display(Thread.CurrentThread.ManagedThreadId, result, bossAlert.isLock);
+                var result = !bossAlert.IsComing ? "老闆還沒來繼續看MLB" : "老闆來了快關掉MLB,假裝工作中 ...";
+                Word.Display(Thread.CurrentThread.ManagedThreadId, result, bossAlert.IsLock);
             }
         }
 

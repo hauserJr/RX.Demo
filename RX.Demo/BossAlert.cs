@@ -6,8 +6,8 @@ namespace RX.Demo
 {
     public class BossAlert
     {
-        public bool isComing { get; set; }
+        public bool IsComing { get; set; }
 
-        public bool isLock { get; set; }
+        public bool IsLock { get; set; }
     }
 }

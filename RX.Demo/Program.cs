@@ -62,16 +62,16 @@ namespace RX.Demo
              */
             data.Add(new BossAlert()
             {
-                isComing = false,
-                isLock = false
+                IsComing = false,
+                IsLock = false
             });
 
             // 多執行緒有Lock
             data.Add(new BossAlert()
             {
 
-                isComing = true,
-                isLock = true
+                IsComing = true,
+                IsLock = true
             });
             Console.ReadLine();
 
