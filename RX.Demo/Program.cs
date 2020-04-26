@@ -63,7 +63,7 @@ namespace RX.Demo
             data.Add(new BossAlert()
             {
                 isComing = false,
-                isLock = true
+                isLock = false
             });
 
             // 多執行緒有Lock
@@ -71,7 +71,7 @@ namespace RX.Demo
             {
 
                 isComing = true,
-                isLock = false
+                isLock = true
             });
             Console.ReadLine();
 
